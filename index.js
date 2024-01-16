@@ -21,24 +21,36 @@ async function getSongs() {
 
   return songs;
 }
+
+// play music func
+const playMusic = (track) => {
+  currentSong.src = "/songs/" + track;
+  currentSong.play();
+};
 async function main() {
+  let currentSong;
   let songs = await getSongs();
   //   console.log(songs);
   let songul = document
     .querySelector(".songlists")
     .getElementsByTagName("ul")[0];
   for (const song of songs) {
-    songul.innerHTML += `<li>${song.replaceAll(
-      "%20",
-      ""
-    )}<span style="padding-left:3px;"><i class="fa-solid fa-music"></i></span></li>`;
+    songul.innerHTML += `<li><div class="info">
+    <div> ${song.replaceAll("%20", " ")}</div>
+   
+</div></li>`;
   }
   Array.from(
     document.querySelector(".songlists").getElementsByTagName("li")
   ).forEach((e) => {
     e.addEventListener("click", (element) => {
-      console.log(e.querySelector(".info").firstElementChild.innerHTML.trim());
+      // console.log(e.querySelector(".info").firstElementChild.innerHTML.trim());
+      playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim());
     });
   });
 }
 main();
+// songul.innerHTML += `<li>${song.replaceAll(
+//   "%20",
+//   ""
+// )}<span style="padding-left:3px;"><i class="fa-solid fa-music"></i></span></li>

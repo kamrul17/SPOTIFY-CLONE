@@ -1,9 +1,23 @@
+#navbtn {
+  background-color: #0f0f0f;
+}
+
+#cardBg {
+  background-color: #181818;
+}
 #bgColor1 {
   background-color: #242424;
 }
 #bgColor {
   background-color: #121212;
 }
+#bgColor3 {
+  background-color: #212121;
+}
+
+/* #main-container {
+  height: 100vh !important;
+} */
 .spotifyPlaylists {
   padding: 14px;
 }
@@ -39,7 +53,6 @@
   color: #fff; /* White color for the icon */
 }
 .playbar {
-  background-color: #4caf50;
   width: 96%;
   padding: 15px;
   margin-left: 5px;
@@ -69,4 +82,12 @@
   bottom: 5px;
   left: 0%;
   transition: left 0.5s;
+}
+.songList .info {
+  font-size: 13px;
+  width: 344px;
+}
+
+.info div {
+  word-break: break-all;
 }
