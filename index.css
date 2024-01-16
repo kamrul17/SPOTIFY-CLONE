@@ -1,0 +1,72 @@
+#bgColor1 {
+  background-color: #242424;
+}
+#bgColor {
+  background-color: #121212;
+}
+.spotifyPlaylists {
+  padding: 14px;
+}
+.spotifyPlaylists .card {
+  width: 170px;
+  height: 244px;
+}
+.card {
+  position: relative;
+}
+.card img {
+  border: 3px solid rgb(222, 194, 194);
+  width: 100%;
+  object-fit: contain;
+}
+
+.circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Adjust the size of the circle */
+  height: 50px; /* Adjust the size of the circle */
+  border-radius: 50%;
+  background-color: #4caf50; /* Green background color */
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.icon {
+  color: #fff; /* White color for the icon */
+}
+.playbar {
+  background-color: #4caf50;
+  width: 96%;
+  padding: 15px;
+  margin-left: 5px;
+}
+.songlists ul {
+  padding: 0 12px;
+}
+.songlists ul li {
+  list-style-type: decimal;
+}
+.seekbar {
+  height: 4px;
+  width: 97%;
+  background: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 8px;
+  margin: 6px;
+  cursor: pointer;
+}
+.circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  background-color: black;
+  position: relative;
+  bottom: 5px;
+  left: 0%;
+  transition: left 0.5s;
+}
