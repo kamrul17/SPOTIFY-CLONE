@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -18,9 +18,12 @@
     />
   </head>
   <body class="text-white">
-    <div class="container-fluid vh-100 border border-danger">
+    <div class="container-fluid vh-100">
       <div class="row bg-black vh-100">
         <div class="col-md-3 p-3">
+          <div class="logo">
+            <img width="110" class="invert mb-2" src="logo.svg" alt="Logo" />
+          </div>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 rounded-4" id="bgColor">
             <li class="nav-item" id="leftWay">
               <a class="nav-link text-white" href="#"
@@ -48,7 +51,7 @@
         <div class="col-md-9 position-relative" id="bgColor3">
           <nav class="navbar navbar-expand-lg">
             <div class="container">
-              <button
+              <!-- <button
                 class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
@@ -58,7 +61,7 @@
                 aria-label="Toggle navigation"
               >
                 <span class="navbar-toggler-icon"></span>
-              </button>
+              </button> -->
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item" id="leftWay">
@@ -120,7 +123,7 @@
           <!-- nav end -->
           <div class="spotifyPlaylists">
             <h2 class="mb-2">Spotify Original & Exclusive Podcasts</h2>
-            <div class="container d-flex justify-content-between">
+            <div class="row d-flex justify-content-between">
               <div class="card text-white" id="cardBg">
                 <div class="circle-icon">
                   <i class="fas fa-play icon"></i>
@@ -168,16 +171,25 @@
             </div>
             <!-- playBar -->
             <div class="playbar position-absolute bottom-0" id="navbtn">
+              <div class="d-flex justify-content-between mb-2">
+                <div class="songInfo text-center"></div>
+                <div class="songBtn d-flex justify-content-center">
+                  <button>
+                    <i id="previous" class="fa-solid fa-backward fs-2"></i>
+                  </button>
+                  <button>
+                    <i id="play" class="fa-solid fa-play fs-2"></i>
+                  </button>
+
+                  <button>
+                    <i id="next" class="fa-solid fa-forward fs-2"></i>
+                  </button>
+                </div>
+                <div class="songTime text-center"></div>
+              </div>
               <div class="seekbar position-absolute bottom-0 mb-2">
                 <div class="circle"></div>
               </div>
-              <div class="songInfo"></div>
-              <div class="songBtn d-flex justify-content-center">
-                <a href=""> <i class="fa-solid fa-forward pe-2 fs-2"></i></a>
-                <a href=""><i class="fa-solid fa-play pe-2 fs-2"></i></a>
-                <a href=""><i class="fa-solid fa-backward fs-2"></i></a>
-              </div>
-              <div class="songTime"></div>
             </div>
           </div>
         </div>

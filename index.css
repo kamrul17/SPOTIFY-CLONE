@@ -1,7 +1,9 @@
 #navbtn {
   background-color: #0f0f0f;
 }
-
+.invert {
+  filter: invert(1);
+}
 #cardBg {
   background-color: #181818;
 }
@@ -66,18 +68,19 @@
 .seekbar {
   height: 4px;
   width: 97%;
-  background: black;
+  background-color: #e6d8e2fc;
   border-radius: 10px;
-  position: absolute;
-  bottom: 8px;
+  /* position: absolute;
+  bottom: 8px; */
   margin: 6px;
   cursor: pointer;
+  /* margin-left: 4px; */
 }
 .circle {
   width: 13px;
   height: 13px;
   border-radius: 13px;
-  background-color: black;
+  background-color: #e6d8e2fc;
   position: relative;
   bottom: 5px;
   left: 0%;
@@ -90,4 +93,23 @@
 
 .info div {
   word-break: break-all;
+}
+.songInfo {
+  width: 300px;
+  padding: 2px;
+}
+.songTime {
+  width: 300px;
+  padding: 2px;
+}
+/* media query */
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for medium screens */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for large screens */
 }
